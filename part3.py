@@ -11,7 +11,7 @@ S2 = pd.Series(['e', 'f', 'g', 'h'],
 S2
 
 # iii. (array)
-data = ({10: 'i', 20: 'j', 30: 'k', 40: 'l'})
+array = ({10: 'i', 20: 'j', 30: 'k', 40: 'l'})
 S3 = pd.Series(data)
 S3
 
