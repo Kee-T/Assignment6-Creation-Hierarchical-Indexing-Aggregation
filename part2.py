@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 # i. (set)
 set = pd.Series({'a', 'b', 'c', 'd'}, 
@@ -12,10 +11,9 @@ list = pd.Series(['a', 'b', 'c', 'd'],
 list
 
 # iii. (array)
-data = np.array({'a', 'b', 'c', 'd'})
-array = pd.Series(data, 
-        index=[10, 20, 30, 40])
-array
+array = ({10: 'a', 20: 'b', 30: 'c', 40: 'd'})
+data = pd.Series(array)
+data
 
 # iv. (dictionary)
 # key becomes the index so 10, 20, 30, 40
