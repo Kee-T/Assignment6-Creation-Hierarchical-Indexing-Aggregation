@@ -2,18 +2,19 @@ import pandas as pd
 import numpy as np
 
 # i. (set)
-s = pd.Series({'a', 'b', 'c', 'd'})
-s
+set = pd.Series({'a', 'b', 'c', 'd'})
+set
 
 # ii. (list)
-s = pd.Series(['a', 'b', 'c', 'd'])
-s
+list = pd.Series(['a', 'b', 'c', 'd'])
+list
 
 # iii. (array)
-arr = np.array({'a', 'b', 'c', 'd'})
-s = pd.Series(arr)
-s
+data = np.array({'a', 'b', 'c', 'd'})
+array = pd.Series(data)
+array
 
 # iv. (dictionary)
-s = pd.Series({0: 'a', 1: 'b', 2: 'c', 3: 'd'})
-s
+# key becomes the index so 0, 1, 2, 3
+dict = pd.Series({0: 'a', 1: 'b', 2: 'c', 3: 'd'})
+dict
