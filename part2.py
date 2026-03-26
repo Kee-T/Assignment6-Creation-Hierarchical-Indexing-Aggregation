@@ -12,7 +12,8 @@ list
 
 # iii. (array)
 array = ({'a', 'b', 'c', 'd'})
-data = pd.Series(array, index = [10, 20, 30, 40])
+data = pd.Series(array, 
+        index = [10, 20, 30, 40])
 data
 
 # iv. (dictionary)
