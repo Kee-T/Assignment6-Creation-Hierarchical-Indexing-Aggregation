@@ -3,7 +3,7 @@ import numpy as np
 
 # i. (set)
 # needs to convert set to list first because set is unordered and does not support indexing
-set = pd.Series((list{'a', 'b', 'c', 'd'}, 
+set = pd.Series(list({'a', 'b', 'c', 'd'}, 
         index=[10, 20, 30, 40]))
 print(set)
 
