@@ -1,22 +1,24 @@
 import pandas as pd
+import numpy as np
 
 # i. (set)
-set = pd.Series({'a', 'b', 'c', 'd'}, 
-        index=[10, 20, 30, 40])
-set
+# needs to convert set to list first because set is unordered and does not support indexing
+set = pd.Series((list{'a', 'b', 'c', 'd'}, 
+        index=[10, 20, 30, 40]))
+print(set)
 
 # ii. (list)
 list = pd.Series(['a', 'b', 'c', 'd'], 
         index=[10, 20, 30, 40])
-list
+print(list)
 
 # iii. (array)
-array = ({'a', 'b', 'c', 'd'})
+array = (['a', 'b', 'c', 'd'])
 data = pd.Series(array, 
         index = [10, 20, 30, 40])
-data
+print(data)
 
 # iv. (dictionary)
 # key becomes the index so 10, 20, 30, 40
 dict = pd.Series({10: 'a', 20: 'b', 30: 'c', 40: 'd'})
-dict
+print(dict)
