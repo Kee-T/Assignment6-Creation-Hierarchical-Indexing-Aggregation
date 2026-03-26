@@ -11,8 +11,9 @@ S2 = pd.Series(['e', 'f', 'g', 'h'],
 S2
 
 # iii. (array)
-array = ({10: 'i', 20: 'j', 30: 'k', 40: 'l'})
-S3 = pd.Series(data)
+array = ({'i', 'j', 'k', 'l'})
+S3 = pd.Series(data, 
+        index = [10, 20, 30, 40])
 S3
 
 # iv. (dictionary)
