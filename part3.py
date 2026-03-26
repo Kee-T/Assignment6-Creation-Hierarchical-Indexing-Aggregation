@@ -12,7 +12,7 @@ S2
 
 # iii. (array)
 array = ({'i', 'j', 'k', 'l'})
-S3 = pd.Series(data, 
+S3 = pd.Series(array, 
         index = [10, 20, 30, 40])
 S3
 
