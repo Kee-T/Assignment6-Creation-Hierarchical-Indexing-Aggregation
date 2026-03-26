@@ -1,7 +1,8 @@
 import pandas as pd
 
 # i. (set)
-S1 = pd.Series({'a', 'b', 'c', 'd'}, 
+# needs to convert set to list first because set is unordered and does not support indexing
+S1 = pd.Series(list({'a', 'b', 'c', 'd'}), 
         index=[10, 20, 30, 40])
 S1
 
@@ -11,7 +12,7 @@ S2 = pd.Series(['e', 'f', 'g', 'h'],
 S2
 
 # iii. (array)
-array = ({'i', 'j', 'k', 'l'})
+array = (['i', 'j', 'k', 'l'])
 S3 = pd.Series(array, 
         index = [10, 20, 30, 40])
 S3
