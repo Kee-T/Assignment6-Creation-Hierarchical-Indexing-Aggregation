@@ -1,3 +1,29 @@
+import pandas as pd
+import numpy as np
+
+# define a set (unordered)
+values = {"a", "b", "c", "d"}
+
+# define index
+index = [10, 20, 30, 40]
+
+# convert set to list to pair with index
+S1 = pd.Series(list(values), index=index)
+
+
+# ii. (list)
+S2 = pd.Series(['e', 'f', 'g', 'h'],
+        index=[10, 20, 30, 40])
+
+# iii. (array)
+array = ({10: 'i', 20: 'j', 30: 'k', 40: 'l'})
+S3 = pd.Series(array)
+
+# iv. (dictionary)
+# key becomes the index so 10, 20, 30, 40
+S4 = pd.Series({10: 'm', 20: 'n', 30: 'o', 40: 'p'})
+
+
 # Part 4a
 DF1 = pd.DataFrame({'S1': S1, 'S2': S2, 'S3': S3, 'S4': S4})
 DF1
